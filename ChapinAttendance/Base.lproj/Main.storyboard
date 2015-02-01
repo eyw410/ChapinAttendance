@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,20 +17,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxs-Vt-8KQ">
-                                <rect key="frame" x="279.5" y="143" width="41" height="30"/>
-                                <state key="normal" title="jkdflgj">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eu6-Xg-Qgo">
+                                <rect key="frame" x="270" y="285" width="61" height="30"/>
+                                <state key="normal" title="Check in">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dNU-dG-IRI" kind="show" id="4pz-ab-O7p"/>
+                                    <segue destination="dNU-dG-IRI" kind="show" id="zP3-7q-6KY"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="lucy" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vj6-Lc-6lB">
+                                <rect key="frame" x="134" y="131" width="332" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lxs-Vt-8KQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="123" id="G0i-Vu-fho"/>
-                            <constraint firstAttribute="centerX" secondItem="lxs-Vt-8KQ" secondAttribute="centerX" id="twu-mx-e9O"/>
+                            <constraint firstAttribute="centerX" secondItem="Eu6-Xg-Qgo" secondAttribute="centerX" id="8K0-hr-sCr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vj6-Lc-6lB" secondAttribute="trailing" constant="50" id="CHx-CQ-apG"/>
+                            <constraint firstItem="vj6-Lc-6lB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="W6P-v1-cJW"/>
+                            <constraint firstItem="vj6-Lc-6lB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="103" id="brH-ZP-DSg"/>
+                            <constraint firstItem="Eu6-Xg-Qgo" firstAttribute="top" secondItem="vj6-Lc-6lB" secondAttribute="bottom" constant="132" id="gSf-5B-CYJ"/>
                         </constraints>
                     </view>
                 </viewController>
