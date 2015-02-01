@@ -20,7 +20,7 @@
 
 
 - (IBAction)CheckIn:(id)sender {
-    
+    NSLog(@"%@", _latitude);
 }
 
 - (void)viewDidLoad {
@@ -30,7 +30,7 @@
     _locationManager = [[CLLocationManager alloc]init]; // initializing locationManager
     _locationManager.delegate = self; // we set the delegate of locationManager to self.
     _locationManager.desiredAccuracy = kCLLocationAccuracyBest; // setting the accuracy
-    
+    [_locationManager requestAlwaysAuthorization];
     [_locationManager startUpdatingLocation];  //requesting location updates
     
 }
@@ -46,7 +46,7 @@
 {
     CLLocation *crnLoc = [locations lastObject];
     _latitude = [NSString stringWithFormat:@"%.8f",crnLoc.coordinate.latitude];
-    NSLog(@"%@", _latitude);
+    
     //longitude.text = [NSString stringWithFormat:@"%.8f",crnLoc.coordinate.longitude];
     //altitude.text = [NSString stringWithFormat:@"%.0f m",crnLoc.altitude];
     //speed.text = [NSString stringWithFormat:@"%.1f m/s", crnLoc.speed];
