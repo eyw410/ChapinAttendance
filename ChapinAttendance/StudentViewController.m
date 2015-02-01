@@ -32,8 +32,8 @@
     if (distance == 0){
         [self updateFirebase];
         NSLog(@"distance is 0");
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Really reset?" message:@"Do you really want to reset this game?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
-        // optional - add more buttons:
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Check-In Complete" message:@"Thank you for checking in." delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
+        
         [alert addButtonWithTitle:@"Yes"];
         [alert show];
         
