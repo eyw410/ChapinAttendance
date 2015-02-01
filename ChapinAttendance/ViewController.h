@@ -7,14 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+//#import "StudentViewController.h"
 
 @interface ViewController : UIViewController
 
-<<<<<<< Updated upstream
-=======
 
-
->>>>>>> Stashed changes
 @end
 
 
