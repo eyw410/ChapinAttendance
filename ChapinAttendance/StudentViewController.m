@@ -21,7 +21,11 @@
 
 
 - (IBAction)CheckIn:(id)sender {
-  
+    static double schoolLat = 40.759211;
+    static double schoolLong = -73.984638;
+    CLLocationDistance latMeters = [schoolLat distanceFromLocation:_latitude];
+    
+    NSLog(@"%f, %f", _latitude, _longitude);
 }
 
 - (void)viewDidLoad {
@@ -54,9 +58,6 @@
     
 }
 
-- (void) locationCheck {
-    
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
