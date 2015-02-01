@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7C40A8951A7E7EC200C7AA74 /* StudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C40A8941A7E7EC200C7AA74 /* StudentViewController.m */; };
+		7C40A8981A7E832B00C7AA74 /* AdminViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C40A8971A7E832B00C7AA74 /* AdminViewController.m */; };
 		8BF0C98B1A7E7ED200B96ACF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0C98A1A7E7ED200B96ACF /* main.m */; };
 		8BF0C98E1A7E7ED200B96ACF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0C98D1A7E7ED200B96ACF /* AppDelegate.m */; };
 		8BF0C9911A7E7ED200B96ACF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0C9901A7E7ED200B96ACF /* ViewController.m */; };
@@ -30,6 +31,8 @@
 /* Begin PBXFileReference section */
 		7C40A8931A7E7EC200C7AA74 /* StudentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentViewController.h; sourceTree = "<group>"; };
 		7C40A8941A7E7EC200C7AA74 /* StudentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentViewController.m; sourceTree = "<group>"; };
+		7C40A8961A7E832B00C7AA74 /* AdminViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminViewController.h; sourceTree = "<group>"; };
+		7C40A8971A7E832B00C7AA74 /* AdminViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminViewController.m; sourceTree = "<group>"; };
 		8BF0C9851A7E7ED200B96ACF /* ChapinAttendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChapinAttendance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF0C9891A7E7ED200B96ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BF0C98A1A7E7ED200B96ACF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +92,8 @@
 				8BF0C98F1A7E7ED200B96ACF /* ViewController.h */,
 				8BF0C9901A7E7ED200B96ACF /* ViewController.m */,
 				8BF0C9921A7E7ED200B96ACF /* Main.storyboard */,
+				7C40A8961A7E832B00C7AA74 /* AdminViewController.h */,
+				7C40A8971A7E832B00C7AA74 /* AdminViewController.m */,
 				7C40A8931A7E7EC200C7AA74 /* StudentViewController.h */,
 				7C40A8941A7E7EC200C7AA74 /* StudentViewController.m */,
 				8BF0C9951A7E7ED200B96ACF /* Images.xcassets */,
@@ -226,6 +231,7 @@
 			files = (
 				7C40A8951A7E7EC200C7AA74 /* StudentViewController.m in Sources */,
 				8BF0C9911A7E7ED200B96ACF /* ViewController.m in Sources */,
+				7C40A8981A7E832B00C7AA74 /* AdminViewController.m in Sources */,
 				8BF0C98E1A7E7ED200B96ACF /* AppDelegate.m in Sources */,
 				8BF0C98B1A7E7ED200B96ACF /* main.m in Sources */,
 			);
