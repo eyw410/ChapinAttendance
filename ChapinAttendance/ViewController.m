@@ -16,6 +16,10 @@
 @end
 
 @implementation ViewController
+- (IBAction)username:(UITextField *)sender {
+   // static NSString *usernameValue = self.username.textField;
+   // NSLog(@"%@", usernameValue);
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

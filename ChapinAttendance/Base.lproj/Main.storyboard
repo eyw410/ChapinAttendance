@@ -21,6 +21,10 @@
                                 <rect key="frame" x="134" y="131" width="332" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="username:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="yCK-pb-Rhm"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="y4A-eU-bP2"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qpg-Qe-fOw">
                                 <rect key="frame" x="134" y="183" width="332" height="30"/>
