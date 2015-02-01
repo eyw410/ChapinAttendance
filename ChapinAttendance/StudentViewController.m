@@ -23,7 +23,11 @@
 - (IBAction)CheckIn:(id)sender {
     static double schoolLat = 40.759211;
     static double schoolLong = -73.984638;
-    CLLocationDistance latMeters = [schoolLat distanceFromLocation:_latitude];
+    
+    CLLocation *trinityLocation = [[CLLocation alloc] initWithLatitude:schoolLat longitude:schoolLong];
+    CLLocation *myLocation = [[CLLocation alloc] initWithLatitude:_latitude longitude:_longitude];
+    CLLocationDistance distance = [trinityLocation distanceFromLocation:myLocation];
+    NSLog(@"%@", distance);
     
     NSLog(@"%f, %f", _latitude, _longitude);
 }
