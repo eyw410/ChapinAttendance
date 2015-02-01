@@ -1,4 +1,4 @@
-//
+    //
 //  StudentViewController.m
 //  ChapinAttendance
 //
@@ -22,8 +22,12 @@
 
 
 - (IBAction)CheckIn:(id)sender {
-    static double schoolLat = 40.759211;
-    static double schoolLong = -73.984638;
+    //static double schoolLat = 40.759211;
+    //static double schoolLong = -73.984638;
+    
+    //DEMO
+    static double schoolLat = 80.0;
+    static double schoolLong = -30.0;
     
     CLLocation *trinityLocation = [[CLLocation alloc] initWithLatitude:schoolLat longitude:schoolLong];
     CLLocation *myLocation = [[CLLocation alloc] initWithLatitude:_latitude longitude:_longitude];
@@ -37,6 +41,11 @@
         [alert addButtonWithTitle:@"Yes"];
         [alert show];
         
+    }else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Check-In Failed" message:@"You are not in the vicinity of school." delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
+        
+        [alert addButtonWithTitle:@"Yes"];
+        [alert show];
     }
 }
 
