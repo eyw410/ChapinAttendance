@@ -19,13 +19,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.dataArray = [[NSMutableArray alloc] init];
     
     self.innerArray = [NSMutableArray arrayWithObjects: @"Lucy", @"Elizabeth", @"Laura", nil];
     
-    for (NSString* thing in self.innerArray)
+    
+    
+    for (int i = 0; i < [self.innerArray count]; i++)
     {
-        
-        NSLog(@"%@", thing);
+        NSLog(@"%@", self.innerArray[i]);
     }
 
     self.dataArray = [NSMutableArray arrayWithObjects: @"Lucy", @"Elizabeth", @"Laura", nil];
