@@ -7,6 +7,7 @@
 //
 
 #import "StudentViewController.h"
+#import <Firebase/Firebase.h>
 
 @interface StudentViewController ()
 
@@ -27,9 +28,10 @@
     CLLocation *trinityLocation = [[CLLocation alloc] initWithLatitude:schoolLat longitude:schoolLong];
     CLLocation *myLocation = [[CLLocation alloc] initWithLatitude:_latitude longitude:_longitude];
     CLLocationDistance distance = [trinityLocation distanceFromLocation:myLocation];
-    NSLog(@"%@", distance);
-    
-    NSLog(@"%f, %f", _latitude, _longitude);
+    NSLog(@"%f", distance);
+    if (distance == 0){
+        [self updateFirebase];
+    }
 }
 
 - (void)viewDidLoad {
@@ -49,6 +51,10 @@
     _locationManager.desiredAccuracy = kCLLocationAccuracyBest; // setting the accuracy
     [_locationManager requestAlwaysAuthorization];
     [_locationManager startUpdatingLocation];  //requesting location updates
+    
+}
+
+-(void)updateFirebase {
     
 }
 

@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import <Firebase/Firebase.h>
 
 @interface ViewController ()
+
+@property Firebase *fb;
 
 @end
 
@@ -17,12 +20,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //reference to Firebase
+    self.fb = [[Firebase alloc] initWithUrl:@"https://chapinattendance.firebaseio.com"];
+    Firebase *newChat = [self.fb childByAppendingPath:@"lucy"];
+    
+    [newChat setValue:@"no"];
+    
     // Do any additional setup after loading the view, typically from a nib.
 
 
 }
-/*- (IBAction)loginButton:(UIButton *)sender {
-    if (
+
+/*-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    NSLog(@"dkfjs");
+    return YES;
 }*/
 
 - (void)didReceiveMemoryWarning {
