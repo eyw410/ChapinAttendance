@@ -31,6 +31,12 @@
     NSLog(@"%f", distance);
     if (distance == 0){
         [self updateFirebase];
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Really reset?" message:@"Do you really want to reset this game?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
+        // optional - add more buttons:
+        [alert addButtonWithTitle:@"Yes"];
+        [alert show];
+        
     }
 }
 
