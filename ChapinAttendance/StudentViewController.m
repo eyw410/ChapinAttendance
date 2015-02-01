@@ -40,6 +40,7 @@
     [errorAlert show];
     NSLog(@"Error: %@",error.description);
     
+    
 }
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
