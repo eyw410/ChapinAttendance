@@ -10,7 +10,8 @@
 
 @interface AdminViewController ()
 
-@property NSArray *dataArray;
+@property NSMutableArray *innerArray;
+@property NSMutableArray *dataArray;
 
 @end
 
@@ -19,7 +20,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.dataArray = @[@"Lucy", @"Elizabeth", @"Laura"];
+    self.innerArray = [NSMutableArray arrayWithObjects: @"Lucy", @"Elizabeth", @"Laura", nil];
+    
+    for (NSString* thing in self.innerArray)
+    {
+        
+        NSLog(@"%@", thing);
+    }
+
+    self.dataArray = [NSMutableArray arrayWithObjects: @"Lucy", @"Elizabeth", @"Laura", nil];
     // Do any additional setup after loading the view.
 }
 
