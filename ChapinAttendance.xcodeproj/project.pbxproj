@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7C40A8951A7E7EC200C7AA74 /* StudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C40A8941A7E7EC200C7AA74 /* StudentViewController.m */; };
 		7C40A8981A7E832B00C7AA74 /* AdminViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C40A8971A7E832B00C7AA74 /* AdminViewController.m */; };
+		7C40A89A1A7E85DA00C7AA74 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C40A8991A7E85DA00C7AA74 /* CoreLocation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		8BF0C98B1A7E7ED200B96ACF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0C98A1A7E7ED200B96ACF /* main.m */; };
 		8BF0C98E1A7E7ED200B96ACF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0C98D1A7E7ED200B96ACF /* AppDelegate.m */; };
 		8BF0C9911A7E7ED200B96ACF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0C9901A7E7ED200B96ACF /* ViewController.m */; };
@@ -33,6 +34,7 @@
 		7C40A8941A7E7EC200C7AA74 /* StudentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentViewController.m; sourceTree = "<group>"; };
 		7C40A8961A7E832B00C7AA74 /* AdminViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminViewController.h; sourceTree = "<group>"; };
 		7C40A8971A7E832B00C7AA74 /* AdminViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminViewController.m; sourceTree = "<group>"; };
+		7C40A8991A7E85DA00C7AA74 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8BF0C9851A7E7ED200B96ACF /* ChapinAttendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChapinAttendance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF0C9891A7E7ED200B96ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BF0C98A1A7E7ED200B96ACF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C40A89A1A7E85DA00C7AA74 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +72,7 @@
 		8BF0C97C1A7E7ED200B96ACF = {
 			isa = PBXGroup;
 			children = (
+				7C40A8991A7E85DA00C7AA74 /* CoreLocation.framework */,
 				8BF0C9871A7E7ED200B96ACF /* ChapinAttendance */,
 				8BF0C9A11A7E7ED200B96ACF /* ChapinAttendanceTests */,
 				8BF0C9861A7E7ED200B96ACF /* Products */,

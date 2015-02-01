@@ -75,7 +75,19 @@
                     <view key="view" contentMode="scaleToFill" id="B8q-9J-Mff">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNV-Ka-uDl">
+                                <rect key="frame" x="277" y="205" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WNV-Ka-uDl" firstAttribute="top" secondItem="d3e-1A-Ws8" secondAttribute="bottom" constant="185" id="OQR-R5-qN1"/>
+                            <constraint firstAttribute="centerX" secondItem="WNV-Ka-uDl" secondAttribute="centerX" id="eKw-7R-ctr"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bp5-Ib-i7R" userLabel="First Responder" sceneMemberID="firstResponder"/>
