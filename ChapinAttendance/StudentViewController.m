@@ -11,6 +11,7 @@
 @interface StudentViewController ()
 
 @property NSString *latitude;
+@property NSString *longitude;
 @property CLLocationManager *locationManager;
 
 @end
@@ -21,6 +22,7 @@
 
 - (IBAction)CheckIn:(id)sender {
     NSLog(@"%@", _latitude);
+    NSLog(@"%@", _longitude);
 }
 
 - (void)viewDidLoad {
@@ -40,7 +42,6 @@
     [errorAlert show];
     NSLog(@"Error: %@",error.description);
     
-    
 }
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
@@ -48,9 +49,8 @@
     CLLocation *crnLoc = [locations lastObject];
     _latitude = [NSString stringWithFormat:@"%.8f",crnLoc.coordinate.latitude];
     
-    //longitude.text = [NSString stringWithFormat:@"%.8f",crnLoc.coordinate.longitude];
-    //altitude.text = [NSString stringWithFormat:@"%.0f m",crnLoc.altitude];
-    //speed.text = [NSString stringWithFormat:@"%.1f m/s", crnLoc.speed];
+    _longitude = [NSString stringWithFormat:@"%.8f",crnLoc.coordinate.longitude];
+    
 }
 
 - (void)didReceiveMemoryWarning {
