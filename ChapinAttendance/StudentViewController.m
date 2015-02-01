@@ -14,6 +14,7 @@
 
 @implementation StudentViewController
 
+//@property NSString *latitude;
 /*- (IBAction)CheckIn:(id)sender {
         if ()
     
@@ -27,6 +28,21 @@
     locationManager.desiredAccuracy = kCLLocationAccuracyBest; // setting the accuracy
     
     [locationManager startUpdatingLocation];  //requesting location updates
+   // NSLog(@"%@", latitude);
+}
+
+-(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
+    UIAlertView *errorAlert = [[UIAlertView alloc]initWithTitle:@"Error" message:@"There was an error retrieving your location" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    [errorAlert show];
+    NSLog(@"Error: %@",error.description);
+}
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    CLLocation *crnLoc = [locations lastObject];
+   // _latitude = [NSString stringWithFormat:@"%.8f",crnLoc.coordinate.latitude];
+    //longitude.text = [NSString stringWithFormat:@"%.8f",crnLoc.coordinate.longitude];
+    //altitude.text = [NSString stringWithFormat:@"%.0f m",crnLoc.altitude];
+    //speed.text = [NSString stringWithFormat:@"%.1f m/s", crnLoc.speed];
 }
 
 - (void)didReceiveMemoryWarning {
