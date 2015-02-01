@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C40A8951A7E7EC200C7AA74 /* StudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C40A8941A7E7EC200C7AA74 /* StudentViewController.m */; };
 		8BF0C98B1A7E7ED200B96ACF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0C98A1A7E7ED200B96ACF /* main.m */; };
 		8BF0C98E1A7E7ED200B96ACF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0C98D1A7E7ED200B96ACF /* AppDelegate.m */; };
 		8BF0C9911A7E7ED200B96ACF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0C9901A7E7ED200B96ACF /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C40A8931A7E7EC200C7AA74 /* StudentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentViewController.h; sourceTree = "<group>"; };
+		7C40A8941A7E7EC200C7AA74 /* StudentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentViewController.m; sourceTree = "<group>"; };
 		8BF0C9851A7E7ED200B96ACF /* ChapinAttendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChapinAttendance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF0C9891A7E7ED200B96ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BF0C98A1A7E7ED200B96ACF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +89,8 @@
 				8BF0C98F1A7E7ED200B96ACF /* ViewController.h */,
 				8BF0C9901A7E7ED200B96ACF /* ViewController.m */,
 				8BF0C9921A7E7ED200B96ACF /* Main.storyboard */,
+				7C40A8931A7E7EC200C7AA74 /* StudentViewController.h */,
+				7C40A8941A7E7EC200C7AA74 /* StudentViewController.m */,
 				8BF0C9951A7E7ED200B96ACF /* Images.xcassets */,
 				8BF0C9971A7E7ED200B96ACF /* LaunchScreen.xib */,
 				8BF0C9881A7E7ED200B96ACF /* Supporting Files */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C40A8951A7E7EC200C7AA74 /* StudentViewController.m in Sources */,
 				8BF0C9911A7E7ED200B96ACF /* ViewController.m in Sources */,
 				8BF0C98E1A7E7ED200B96ACF /* AppDelegate.m in Sources */,
 				8BF0C98B1A7E7ED200B96ACF /* main.m in Sources */,
@@ -414,6 +420,7 @@
 				8BF0C9AA1A7E7ED300B96ACF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BF0C9AB1A7E7ED300B96ACF /* Build configuration list for PBXNativeTarget "ChapinAttendanceTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +429,7 @@
 				8BF0C9AD1A7E7ED300B96ACF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
