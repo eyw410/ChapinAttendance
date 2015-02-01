@@ -27,25 +27,18 @@
     self.fb = [[Firebase alloc] initWithUrl:@"https://chapinattendance.firebaseio.com"];
     Firebase *newChat = [self.fb childByAppendingPath:@"lucy"];
     
-    [newChat setValue:@"no1"];
+    [newChat setValue:@"no"];
     
     // Do any additional setup after loading the view, typically from a nib.
+    NSString *inputUsername = [_usernameValue text];
+    NSLog(@"%@", inputUsername);
 
 }
 
-/*- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-    if([segue.identifier isEqualToString: @"studentSegue"]) {
-        StudentViewController *controller = (StudentViewController *)segue.destinationViewController;
-        controller.username = @"sdjkl";
-    }
-    
-}*/
-
--(BOOL)textFieldShouldReturn:(UITextField *)textField {
+/*-(BOOL)textFieldShouldReturn:(UITextField *)textField {
     NSLog(@"dkfjs");
     return YES;
-}
+}*/
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

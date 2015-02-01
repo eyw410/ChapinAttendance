@@ -11,6 +11,4 @@
 
 @interface StudentViewController : UIViewController <CLLocationManagerDelegate>
 
-//@property (nonatomic, retain) NSString *username;
-
 @end

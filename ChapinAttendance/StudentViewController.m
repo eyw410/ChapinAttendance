@@ -42,7 +42,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //NSLog(@"%@", self.username);
+    
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
     CGFloat height = [UIScreen mainScreen].bounds.size.height;
     
@@ -51,6 +51,7 @@
     
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:background]];
 
+    NSLog(@"is this working");
     _locationManager = [[CLLocationManager alloc]init]; // initializing locationManager
     _locationManager.delegate = self; // we set the delegate of locationManager to self.
     _locationManager.desiredAccuracy = kCLLocationAccuracyBest; // setting the accuracy

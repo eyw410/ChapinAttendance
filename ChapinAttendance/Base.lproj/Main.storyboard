@@ -46,7 +46,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dNU-dG-IRI" kind="show" identifier="studentSegue" id="BQw-4L-iMk"/>
+                                    <segue destination="dNU-dG-IRI" kind="show" id="BQw-4L-iMk"/>
                                 </connections>
                             </button>
                         </subviews>
