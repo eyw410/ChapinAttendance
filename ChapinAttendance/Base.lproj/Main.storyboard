@@ -118,17 +118,6 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0nC-3P-qXX" id="Oz5-dg-7nS">
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSj-A6-JL5">
-                                                    <rect key="frame" x="520" y="8" width="46" height="30"/>
-                                                    <state key="normal" title="Button">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <segue destination="MmF-wT-pLA" kind="show" id="Blb-BD-Ngs"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -144,24 +133,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nQa-i0-ipu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1030" y="1000"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Vn6-Uu-zFy">
-            <objects>
-                <viewController id="MmF-wT-pLA" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZHF-WX-iA1"/>
-                        <viewControllerLayoutGuide type="bottom" id="qyz-eu-VEl"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5IT-Lo-D0q">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DJI-6n-h2G" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1695" y="994"/>
         </scene>
     </scenes>
 </document>
