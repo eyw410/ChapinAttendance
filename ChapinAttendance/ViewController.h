@@ -10,11 +10,6 @@
 
 @interface ViewController : UIViewController
 
-<<<<<<< Updated upstream
-=======
-
-
->>>>>>> Stashed changes
 @end
 
 
