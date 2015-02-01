@@ -64,9 +64,6 @@
                             <constraint firstItem="Qpg-Qe-fOw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="qTa-rY-jQQ"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="usernameValue" destination="vj6-Lc-6lB" id="oWy-x6-C1F"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
