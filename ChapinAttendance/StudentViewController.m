@@ -22,12 +22,12 @@
 
 
 - (IBAction)CheckIn:(id)sender {
-    //static double schoolLat = 40.759211;
-    //static double schoolLong = -73.984638;
+    static double schoolLat = 40.759211;
+    static double schoolLong = -73.984638;
     
     //DEMO
-    static double schoolLat = 80.0;
-    static double schoolLong = -30.0;
+    //static double schoolLat = 80.0;
+    //static double schoolLong = -30.0;
     
     CLLocation *trinityLocation = [[CLLocation alloc] initWithLatitude:schoolLat longitude:schoolLong];
     CLLocation *myLocation = [[CLLocation alloc] initWithLatitude:_latitude longitude:_longitude];
