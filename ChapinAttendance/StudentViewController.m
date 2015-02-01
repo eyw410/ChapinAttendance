@@ -14,10 +14,10 @@
 
 @implementation StudentViewController
 
-- (IBAction)CheckIn:(id)sender {
+/*- (IBAction)CheckIn:(id)sender {
         if ()
     
-}
+}*/
 
 - (void)viewDidLoad {
     [super viewDidLoad];

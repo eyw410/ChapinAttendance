@@ -10,6 +10,12 @@
 		7C40A8951A7E7EC200C7AA74 /* StudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C40A8941A7E7EC200C7AA74 /* StudentViewController.m */; };
 		7C40A8981A7E832B00C7AA74 /* AdminViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C40A8971A7E832B00C7AA74 /* AdminViewController.m */; };
 		7C40A89A1A7E85DA00C7AA74 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C40A8991A7E85DA00C7AA74 /* CoreLocation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		8BABE6701A7E8A050007DE4F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BABE66F1A7E8A050007DE4F /* Security.framework */; };
+		8BABE6721A7E8A0B0007DE4F /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BABE6711A7E8A0B0007DE4F /* libicucore.dylib */; };
+		8BABE6741A7E8A140007DE4F /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BABE6731A7E8A140007DE4F /* libc++.dylib */; };
+		8BABE6761A7E8A2E0007DE4F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BABE6751A7E8A2E0007DE4F /* CFNetwork.framework */; };
+		8BABE6781A7E8A340007DE4F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BABE6771A7E8A340007DE4F /* SystemConfiguration.framework */; };
+		8BABE67A1A7E8AC50007DE4F /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BABE6791A7E8AC50007DE4F /* Firebase.framework */; };
 		8BF0C98B1A7E7ED200B96ACF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0C98A1A7E7ED200B96ACF /* main.m */; };
 		8BF0C98E1A7E7ED200B96ACF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0C98D1A7E7ED200B96ACF /* AppDelegate.m */; };
 		8BF0C9911A7E7ED200B96ACF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0C9901A7E7ED200B96ACF /* ViewController.m */; };
@@ -35,6 +41,12 @@
 		7C40A8961A7E832B00C7AA74 /* AdminViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminViewController.h; sourceTree = "<group>"; };
 		7C40A8971A7E832B00C7AA74 /* AdminViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminViewController.m; sourceTree = "<group>"; };
 		7C40A8991A7E85DA00C7AA74 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8BABE66F1A7E8A050007DE4F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8BABE6711A7E8A0B0007DE4F /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		8BABE6731A7E8A140007DE4F /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		8BABE6751A7E8A2E0007DE4F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8BABE6771A7E8A340007DE4F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8BABE6791A7E8AC50007DE4F /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		8BF0C9851A7E7ED200B96ACF /* ChapinAttendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChapinAttendance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF0C9891A7E7ED200B96ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BF0C98A1A7E7ED200B96ACF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -55,6 +67,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BABE6781A7E8A340007DE4F /* SystemConfiguration.framework in Frameworks */,
+				8BABE6761A7E8A2E0007DE4F /* CFNetwork.framework in Frameworks */,
+				8BABE6741A7E8A140007DE4F /* libc++.dylib in Frameworks */,
+				8BABE67A1A7E8AC50007DE4F /* Firebase.framework in Frameworks */,
+				8BABE6721A7E8A0B0007DE4F /* libicucore.dylib in Frameworks */,
+				8BABE6701A7E8A050007DE4F /* Security.framework in Frameworks */,
 				7C40A89A1A7E85DA00C7AA74 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,10 +87,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8BABE66C1A7E89CE0007DE4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BABE6791A7E8AC50007DE4F /* Firebase.framework */,
+				8BABE6771A7E8A340007DE4F /* SystemConfiguration.framework */,
+				8BABE6751A7E8A2E0007DE4F /* CFNetwork.framework */,
+				8BABE6731A7E8A140007DE4F /* libc++.dylib */,
+				8BABE6711A7E8A0B0007DE4F /* libicucore.dylib */,
+				8BABE66F1A7E8A050007DE4F /* Security.framework */,
+				7C40A8991A7E85DA00C7AA74 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8BF0C97C1A7E7ED200B96ACF = {
 			isa = PBXGroup;
 			children = (
-				7C40A8991A7E85DA00C7AA74 /* CoreLocation.framework */,
 				8BF0C9871A7E7ED200B96ACF /* ChapinAttendance */,
 				8BF0C9A11A7E7ED200B96ACF /* ChapinAttendanceTests */,
 				8BF0C9861A7E7ED200B96ACF /* Products */,
@@ -102,6 +133,7 @@
 				7C40A8941A7E7EC200C7AA74 /* StudentViewController.m */,
 				8BF0C9951A7E7ED200B96ACF /* Images.xcassets */,
 				8BF0C9971A7E7ED200B96ACF /* LaunchScreen.xib */,
+				8BABE66C1A7E89CE0007DE4F /* Frameworks */,
 				8BF0C9881A7E7ED200B96ACF /* Supporting Files */,
 			);
 			path = ChapinAttendance;
@@ -361,8 +393,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ChapinAttendance",
+				);
 				INFOPLIST_FILE = ChapinAttendance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-Objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -371,8 +408,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ChapinAttendance",
+				);
 				INFOPLIST_FILE = ChapinAttendance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-Objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
