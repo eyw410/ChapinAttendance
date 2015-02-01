@@ -24,6 +24,7 @@
 		8BF0C9991A7E7ED200B96ACF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BF0C9971A7E7ED200B96ACF /* LaunchScreen.xib */; };
 		8BF0C9A51A7E7ED200B96ACF /* ChapinAttendanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0C9A41A7E7ED200B96ACF /* ChapinAttendanceTests.m */; };
 		C49244B51A7EA679005EF560 /* screenie.png in Resources */ = {isa = PBXBuildFile; fileRef = C49244B41A7EA679005EF560 /* screenie.png */; };
+		C49244B71A7EAD41005EF560 /* FINAL.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C49244B61A7EAD41005EF560 /* FINAL.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		8BF0C9A31A7E7ED200B96ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BF0C9A41A7E7ED200B96ACF /* ChapinAttendanceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChapinAttendanceTests.m; sourceTree = "<group>"; };
 		C49244B41A7EA679005EF560 /* screenie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenie.png; sourceTree = "<group>"; };
+		C49244B61A7EAD41005EF560 /* FINAL.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FINAL.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				7C40A8941A7E7EC200C7AA74 /* StudentViewController.m */,
 				8BF0C9951A7E7ED200B96ACF /* Images.xcassets */,
 				8BF0C9971A7E7ED200B96ACF /* LaunchScreen.xib */,
+				C49244B61A7EAD41005EF560 /* FINAL.jpg */,
 				C49244B41A7EA679005EF560 /* screenie.png */,
 				8BABE66C1A7E89CE0007DE4F /* Frameworks */,
 				8BF0C9881A7E7ED200B96ACF /* Supporting Files */,
@@ -250,6 +253,7 @@
 			files = (
 				8BF0C9941A7E7ED200B96ACF /* Main.storyboard in Resources */,
 				C49244B51A7EA679005EF560 /* screenie.png in Resources */,
+				C49244B71A7EAD41005EF560 /* FINAL.jpg in Resources */,
 				8BF0C9991A7E7ED200B96ACF /* LaunchScreen.xib in Resources */,
 				8BF0C9961A7E7ED200B96ACF /* Images.xcassets in Resources */,
 			);

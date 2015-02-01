@@ -31,7 +31,7 @@
     NSLog(@"%f", distance);
     if (distance == 0){
         [self updateFirebase];
-        
+        NSLog(@"distance is 0");
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Really reset?" message:@"Do you really want to reset this game?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
         // optional - add more buttons:
         [alert addButtonWithTitle:@"Yes"];
@@ -47,7 +47,7 @@
     CGFloat height = [UIScreen mainScreen].bounds.size.height;
     
     CGSize backgroundSize = CGSizeMake(width, height);
-    UIImage *background = [self imageWithImage: [UIImage imageNamed: @"screenie.png"] scaledToSize:backgroundSize];
+    UIImage *background = [self imageWithImage: [UIImage imageNamed: @"FINAL.jpg"] scaledToSize:backgroundSize];
     
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:background]];
 
