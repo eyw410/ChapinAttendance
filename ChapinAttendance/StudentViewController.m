@@ -26,6 +26,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"screenie.png"]]];
 
     NSLog(@"is this working");
     _locationManager = [[CLLocationManager alloc]init]; // initializing locationManager
