@@ -10,6 +10,6 @@
 #import <CoreLocation/CoreLocation.h>
 @interface StudentViewController : UIViewController <CLLocationManagerDelegate>
 
-CLLocationManager *locationManager;
+//CLLocationManager *locationManager;
 
 @end
