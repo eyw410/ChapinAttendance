@@ -23,8 +23,6 @@
     
     self.innerArray = [NSMutableArray arrayWithObjects: @"Lucy", @"Elizabeth", @"Laura", nil];
     
-    
-    
     for (int i = 0; i < [self.innerArray count]; i++)
     {
         NSLog(@"%@", self.innerArray[i]);
