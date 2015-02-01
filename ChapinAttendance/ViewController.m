@@ -10,16 +10,15 @@
 #import <Firebase/Firebase.h>
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *usernameValue;
 
 @property Firebase *fb;
+
 
 @end
 
 @implementation ViewController
-- (IBAction)username:(UITextField *)sender {
-   // static NSString *usernameValue = self.username.textField;
-   // NSLog(@"%@", usernameValue);
-}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,6 +30,8 @@
     [newChat setValue:@"no"];
     
     // Do any additional setup after loading the view, typically from a nib.
+    NSString *inputUsername = [_usernameValue text];
+    NSLog(@"%@", inputUsername);
 
 }
 
