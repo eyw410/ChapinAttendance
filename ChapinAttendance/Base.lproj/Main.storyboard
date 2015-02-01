@@ -26,7 +26,12 @@
                                     <segue destination="dNU-dG-IRI" kind="show" id="zP3-7q-6KY"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="lucy" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vj6-Lc-6lB">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qpg-Qe-fOw">
+                                <rect key="frame" x="134" y="183" width="332" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vj6-Lc-6lB">
                                 <rect key="frame" x="134" y="131" width="332" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -34,11 +39,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Qpg-Qe-fOw" firstAttribute="top" secondItem="vj6-Lc-6lB" secondAttribute="bottom" constant="22" id="2mW-oM-thm"/>
                             <constraint firstAttribute="centerX" secondItem="Eu6-Xg-Qgo" secondAttribute="centerX" id="8K0-hr-sCr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vj6-Lc-6lB" secondAttribute="trailing" constant="50" id="CHx-CQ-apG"/>
                             <constraint firstItem="vj6-Lc-6lB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="W6P-v1-cJW"/>
                             <constraint firstItem="vj6-Lc-6lB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="103" id="brH-ZP-DSg"/>
                             <constraint firstItem="Eu6-Xg-Qgo" firstAttribute="top" secondItem="vj6-Lc-6lB" secondAttribute="bottom" constant="132" id="gSf-5B-CYJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qpg-Qe-fOw" secondAttribute="trailing" constant="50" id="pEG-tT-xr0"/>
+                            <constraint firstItem="Qpg-Qe-fOw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="qTa-rY-jQQ"/>
                         </constraints>
                     </view>
                 </viewController>
