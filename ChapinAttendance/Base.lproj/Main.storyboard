@@ -22,16 +22,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eu6-Xg-Qgo">
-                                <rect key="frame" x="279" y="285" width="43" height="30"/>
-                                <state key="normal" title="Log In">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="083-Cv-ZTJ"/>
-                                    <segue destination="dNU-dG-IRI" kind="show" id="zP3-7q-6KY"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qpg-Qe-fOw">
                                 <rect key="frame" x="134" y="183" width="332" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -46,17 +36,26 @@
                                     <segue destination="saU-bf-8Pa" kind="show" id="fYI-hu-fLd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WC-NV-hiS">
+                                <rect key="frame" x="294" y="266" width="43" height="30"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dNU-dG-IRI" kind="show" id="BQw-4L-iMk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Qpg-Qe-fOw" firstAttribute="top" secondItem="vj6-Lc-6lB" secondAttribute="bottom" constant="22" id="2mW-oM-thm"/>
-                            <constraint firstAttribute="centerX" secondItem="Eu6-Xg-Qgo" secondAttribute="centerX" id="8K0-hr-sCr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vj6-Lc-6lB" secondAttribute="trailing" constant="50" id="CHx-CQ-apG"/>
                             <constraint firstAttribute="centerX" secondItem="EH2-4G-yrn" secondAttribute="centerX" id="FG8-2J-tFD"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EH2-4G-yrn" secondAttribute="bottom" constant="20" id="NMd-ED-ZJv"/>
                             <constraint firstItem="vj6-Lc-6lB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="W6P-v1-cJW"/>
+                            <constraint firstItem="2WC-NV-hiS" firstAttribute="top" secondItem="Qpg-Qe-fOw" secondAttribute="bottom" constant="53" id="ZSe-AI-4ug"/>
                             <constraint firstItem="vj6-Lc-6lB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="103" id="brH-ZP-DSg"/>
-                            <constraint firstItem="Eu6-Xg-Qgo" firstAttribute="top" secondItem="vj6-Lc-6lB" secondAttribute="bottom" constant="132" id="gSf-5B-CYJ"/>
+                            <constraint firstAttribute="centerX" secondItem="2WC-NV-hiS" secondAttribute="centerX" id="oKZ-uW-d6b"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Qpg-Qe-fOw" secondAttribute="trailing" constant="50" id="pEG-tT-xr0"/>
                             <constraint firstItem="Qpg-Qe-fOw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="qTa-rY-jQQ"/>
                         </constraints>
@@ -94,7 +93,20 @@
                     <view key="view" contentMode="scaleToFill" id="bPO-Oz-RHZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1R-RT-7PM">
+                                <rect key="frame" x="277" y="188" width="61" height="30"/>
+                                <state key="normal" title="Check In">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W1R-RT-7PM" firstAttribute="leading" secondItem="bPO-Oz-RHZ" secondAttribute="leadingMargin" constant="250" id="2ai-DY-hq2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W1R-RT-7PM" secondAttribute="trailing" constant="250" id="UxJ-mv-t3m"/>
+                            <constraint firstItem="W1R-RT-7PM" firstAttribute="top" secondItem="Mme-zK-URi" secondAttribute="bottom" constant="150" id="cna-gn-4sd"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nQa-i0-ipu" userLabel="First Responder" sceneMemberID="firstResponder"/>
