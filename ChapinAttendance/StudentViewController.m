@@ -35,7 +35,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"screenie.png"]]];
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    CGFloat height = [UIScreen mainScreen].bounds.size.height;
+    
+    CGSize backgroundSize = CGSizeMake(width, height);
+    UIImage *background = [self imageWithImage: [UIImage imageNamed: @"screenie.png"] scaledToSize:backgroundSize];
+    
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:background]];
 
     NSLog(@"is this working");
     _locationManager = [[CLLocationManager alloc]init]; // initializing locationManager
@@ -44,6 +50,14 @@
     [_locationManager requestAlwaysAuthorization];
     [_locationManager startUpdatingLocation];  //requesting location updates
     
+}
+
+-(UIImage*)imageWithImage:(UIImage*)image scaledToSize:(CGSize)newSize {
+    UIGraphicsBeginImageContext(newSize);
+    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
 }
 
 -(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
