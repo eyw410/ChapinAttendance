@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
-@interface StudentViewController : UIViewController <CLLocationManagerDelegate>
 
-//CLLocationManager *locationManager;
+@interface StudentViewController : UIViewController <CLLocationManagerDelegate>
 
 @end
