@@ -1,4 +1,4 @@
-    //
+//
 //  StudentViewController.m
 //  ChapinAttendance
 //
@@ -14,20 +14,19 @@
 @property double latitude;
 @property double longitude;
 @property CLLocationManager *locationManager;
-
 @end
-
 
 @implementation StudentViewController
 
 
 - (IBAction)CheckIn:(id)sender {
+    // Trinity latitude and longitude
     static double schoolLat = 40.759211;
     static double schoolLong = -73.984638;
     
-    //DEMO
-    //static double schoolLat = 80.0;
-    //static double schoolLong = -30.0;
+    // Chapin latitude and longitude
+    //static double schoolLat = 40.7740947;
+    //static double schoolLong = -73.946093;
     
     CLLocation *trinityLocation = [[CLLocation alloc] initWithLatitude:schoolLat longitude:schoolLong];
     CLLocation *myLocation = [[CLLocation alloc] initWithLatitude:_latitude longitude:_longitude];
@@ -56,7 +55,7 @@
     CGFloat height = [UIScreen mainScreen].bounds.size.height;
     
     CGSize backgroundSize = CGSizeMake(width, height);
-    UIImage *background = [self imageWithImage: [UIImage imageNamed: @"FINAL.jpg"] scaledToSize:backgroundSize];
+    UIImage *background = [self imageWithImage: [UIImage imageNamed: @"2.jpg"] scaledToSize:backgroundSize];
     
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:background]];
 

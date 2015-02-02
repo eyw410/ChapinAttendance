@@ -12,6 +12,7 @@
 @interface ViewController ()
 
 @property Firebase *fb;
+@property (weak, nonatomic) IBOutlet UITextField *userTextField;
 
 @end
 
@@ -21,17 +22,35 @@
    // NSLog(@"%@", usernameValue);
 }
 
+- (IBAction)login:(id)sender {
+    Firebase *newUser = [self.fb childByAppendingPath:self.userTextField.text];
+    [newUser setValue:@"present"];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     //reference to Firebase
     self.fb = [[Firebase alloc] initWithUrl:@"https://chapinattendance.firebaseio.com"];
-    Firebase *newChat = [self.fb childByAppendingPath:@"lucy"];
     
-    [newChat setValue:@"no"];
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    CGFloat height = [UIScreen mainScreen].bounds.size.height;
+    
+    CGSize backgroundSize = CGSizeMake(width, height);
+    UIImage *background = [self imageWithImage: [UIImage imageNamed: @"4.jpg"] scaledToSize:backgroundSize];
+    
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:background]];
     
     // Do any additional setup after loading the view, typically from a nib.
 
+}
+
+-(UIImage*)imageWithImage:(UIImage*)image scaledToSize:(CGSize)newSize {
+    UIGraphicsBeginImageContext(newSize);
+    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
 }
 
 /*-(BOOL)textFieldShouldReturn:(UITextField *)textField {

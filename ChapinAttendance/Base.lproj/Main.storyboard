@@ -29,24 +29,27 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qpg-Qe-fOw">
                                 <rect key="frame" x="134" y="183" width="332" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EH2-4G-yrn">
-                                <rect key="frame" x="278" y="550" width="44" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WC-NV-hiS">
+                                <rect key="frame" x="279" y="266" width="105" height="113"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dSe-SE-hmj"/>
+                                    <segue destination="dNU-dG-IRI" kind="show" id="BQw-4L-iMk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EH2-4G-yrn">
+                                <rect key="frame" x="31" y="550" width="44" height="30"/>
                                 <state key="normal" title="Admin">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="saU-bf-8Pa" kind="show" id="fYI-hu-fLd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WC-NV-hiS">
-                                <rect key="frame" x="279" y="266" width="43" height="30"/>
-                                <state key="normal" title="Log In">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="dNU-dG-IRI" kind="show" id="BQw-4L-iMk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -55,15 +58,19 @@
                             <constraint firstItem="Qpg-Qe-fOw" firstAttribute="top" secondItem="vj6-Lc-6lB" secondAttribute="bottom" constant="22" id="2mW-oM-thm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vj6-Lc-6lB" secondAttribute="trailing" constant="50" id="CHx-CQ-apG"/>
                             <constraint firstAttribute="centerX" secondItem="EH2-4G-yrn" secondAttribute="centerX" id="FG8-2J-tFD"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EH2-4G-yrn" secondAttribute="bottom" constant="20" id="NMd-ED-ZJv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EH2-4G-yrn" secondAttribute="bottom" constant="50" id="NMd-ED-ZJv"/>
                             <constraint firstItem="vj6-Lc-6lB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="W6P-v1-cJW"/>
-                            <constraint firstItem="2WC-NV-hiS" firstAttribute="top" secondItem="Qpg-Qe-fOw" secondAttribute="bottom" constant="53" id="ZSe-AI-4ug"/>
-                            <constraint firstItem="vj6-Lc-6lB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="103" id="brH-ZP-DSg"/>
-                            <constraint firstAttribute="centerX" secondItem="2WC-NV-hiS" secondAttribute="centerX" id="oKZ-uW-d6b"/>
+                            <constraint firstItem="2WC-NV-hiS" firstAttribute="top" secondItem="Qpg-Qe-fOw" secondAttribute="bottom" constant="80" id="ZSe-AI-4ug"/>
+                            <constraint firstItem="vj6-Lc-6lB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="brH-ZP-DSg"/>
+                            <constraint firstAttribute="centerX" secondItem="2WC-NV-hiS" secondAttribute="centerX" id="fDX-9v-HZX"/>
+                            <constraint firstItem="EH2-4G-yrn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="j3y-aN-j42"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Qpg-Qe-fOw" secondAttribute="trailing" constant="50" id="pEG-tT-xr0"/>
                             <constraint firstItem="Qpg-Qe-fOw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="qTa-rY-jQQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userTextField" destination="vj6-Lc-6lB" id="Gl7-ZC-Kfg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,9 +87,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNV-Ka-uDl">
-                                <rect key="frame" x="277" y="320" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNV-Ka-uDl">
+                                <rect key="frame" x="202" y="320" width="191" height="66"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="86"/>
+                                <state key="normal" title="                 ">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>

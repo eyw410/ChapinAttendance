@@ -13,6 +13,8 @@
 		7C40A89C1A7EC05D00C7AA74 /* 10965810_803368606366507_272877349_n.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C40A89B1A7EC05D00C7AA74 /* 10965810_803368606366507_272877349_n.jpg */; };
 		7C40A89E1A7EC2B800C7AA74 /* Screen Shot 2015-02-01 at 3.14.45 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C40A89D1A7EC2B800C7AA74 /* Screen Shot 2015-02-01 at 3.14.45 PM.png */; };
 		7C40A8A01A7EC32500C7AA74 /* 180.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C40A89F1A7EC32500C7AA74 /* 180.png */; };
+		7C40A8A21A7EC7C000C7AA74 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C40A8A11A7EC7C000C7AA74 /* 2.jpg */; };
+		7C40A8A41A7ECAA100C7AA74 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C40A8A31A7ECAA100C7AA74 /* 4.jpg */; };
 		8BABE6701A7E8A050007DE4F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BABE66F1A7E8A050007DE4F /* Security.framework */; };
 		8BABE6721A7E8A0B0007DE4F /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BABE6711A7E8A0B0007DE4F /* libicucore.dylib */; };
 		8BABE6741A7E8A140007DE4F /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BABE6731A7E8A140007DE4F /* libc++.dylib */; };
@@ -49,6 +51,8 @@
 		7C40A89B1A7EC05D00C7AA74 /* 10965810_803368606366507_272877349_n.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10965810_803368606366507_272877349_n.jpg; sourceTree = "<group>"; };
 		7C40A89D1A7EC2B800C7AA74 /* Screen Shot 2015-02-01 at 3.14.45 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2015-02-01 at 3.14.45 PM.png"; sourceTree = "<group>"; };
 		7C40A89F1A7EC32500C7AA74 /* 180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 180.png; sourceTree = "<group>"; };
+		7C40A8A11A7EC7C000C7AA74 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		7C40A8A31A7ECAA100C7AA74 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 		8BABE66F1A7E8A050007DE4F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8BABE6711A7E8A0B0007DE4F /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		8BABE6731A7E8A140007DE4F /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
@@ -148,6 +152,8 @@
 				7C40A89B1A7EC05D00C7AA74 /* 10965810_803368606366507_272877349_n.jpg */,
 				7C40A89D1A7EC2B800C7AA74 /* Screen Shot 2015-02-01 at 3.14.45 PM.png */,
 				7C40A89F1A7EC32500C7AA74 /* 180.png */,
+				7C40A8A31A7ECAA100C7AA74 /* 4.jpg */,
+				7C40A8A11A7EC7C000C7AA74 /* 2.jpg */,
 				8BABE66C1A7E89CE0007DE4F /* Frameworks */,
 				8BF0C9881A7E7ED200B96ACF /* Supporting Files */,
 			);
@@ -263,10 +269,12 @@
 				8BF0C9941A7E7ED200B96ACF /* Main.storyboard in Resources */,
 				7C40A89E1A7EC2B800C7AA74 /* Screen Shot 2015-02-01 at 3.14.45 PM.png in Resources */,
 				C49244B51A7EA679005EF560 /* screenie.png in Resources */,
+				7C40A8A21A7EC7C000C7AA74 /* 2.jpg in Resources */,
 				7C40A8A01A7EC32500C7AA74 /* 180.png in Resources */,
 				C49244B71A7EAD41005EF560 /* FINAL.jpg in Resources */,
 				8BF0C9991A7E7ED200B96ACF /* LaunchScreen.xib in Resources */,
 				7C40A89C1A7EC05D00C7AA74 /* 10965810_803368606366507_272877349_n.jpg in Resources */,
+				7C40A8A41A7ECAA100C7AA74 /* 4.jpg in Resources */,
 				8BF0C9961A7E7ED200B96ACF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
